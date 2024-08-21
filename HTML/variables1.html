@@ -1,0 +1,19 @@
+<!-- // block scope{} -->
+<!-- Block scope means variables declared inside {} only access inside the bracket only -->
+<html>
+<body>
+<title>Scopes</title>
+<h2>block scope</h2>
+<script>
+    {
+        let x = "hello";
+        document.write("Print x : ",x,"<br>")
+         }
+         //document.write("Print x : ",x,"<br>")this line shows error
+    {
+        var x = "welcome";
+    }
+    document.write("Print x : ", x ,"<br>") //using var keyword we can access the block scope variable
+</script>
+</body>
+</html>

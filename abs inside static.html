@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pos. inside another pos</title>
+    <style>
+        .static{
+            position: static;
+            border: 2px solid black;
+            width: 700px;
+            height: 300px;
+        }
+        .absolute{
+            position: absolute;
+            bottom: 0px;
+            left: 10px;
+        }
+        .div{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">abs.pos inside static.pos</h2>
+    <div class="static">I am Static<div class="absolute">Hi, I am absolute.I live in static</div>
+    </div>
+</body>
+</html>

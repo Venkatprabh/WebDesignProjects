@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img. Drag</title>
+    <style>
+        #div1 {
+          margin: 50px;
+          width: 250px;
+          height: 300px;
+          padding: 10px;
+          border: 1px solid #aaaaaa;
+          overflow:scroll ;
+        }
+        </style>
+        <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("Text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          let data = ev.dataTransfer.getData("Text");
+          ev.target.appendChild(document.getElementById(data));
+          ev.preventDefault();
+        }
+        </script>
+        </head>
+        <body>
+        
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">Place here....    </div>
+        <br>
+        <p style="font-size: 25px;" id="drag1" draggable="true" ondragstart="drag(event)">This is a draggable paragraph.
+            Drag this element into the rectangle.</p>
+
+        <img src="/image/batman1.jpg" alt="BatMan" width="300px" height="300px" id="drag2" draggable="true" ondragstart="drag(event)">This is a draggable image.
+            Drag this element into the rectangle.>
+        
+            <img src="/image/batman1.jpg" alt="BatMan" width="300px" height="300px" id="drag2" draggable="false" ondragstart="drag(event)">
+</body>
+</html>

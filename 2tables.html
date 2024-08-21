@@ -1,0 +1,137 @@
+<!-- Table used to group a set of data in rows and columns.
+ tables are created by providing heading and data 
+ <table></table>tags are used to create a table
+ while creating a table there is no borders -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+<style>
+    
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.row::after {   /* if we use flex no need to use the zoda element. */
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 800px){
+    column {
+        width: 100%;
+    }
+    
+}
+
+table,th,td{
+    
+    border-color: blue;
+
+    }
+th,td{
+    border-style: double;
+    border-spacing: 20px;
+    padding-bottom: 50px;
+    }
+    table {
+        background-color: aqua;
+    }
+    th{
+        text-align: center;
+        padding-top: 20%;
+    }
+    
+    tr:nth-child(odd){
+        background-color: #ffff66;
+    }
+</style>
+ </head>
+ <body>
+    <div class="row">
+        <div class="column">
+            <table>
+                <caption><b>Personal Info</b></caption>
+                    <tr>
+                        <th style="width: 60%;">Name</th> <!--colspan merge no.of coloumns, where as rowspan merge number of rows-->
+                        <th>Age</th>
+                        <th>Sex</th>
+                        <th style="width: 10%;">contact No</th>
+                    </tr>
+                    
+                    <tr style="height: 100px;">
+                        <td style="border-spacing:20%;">Prabhu</td>
+                        <td>28</td>
+                        <td>Male</td>
+                        <td>9566422688</td>
+                    </tr>
+                    <tr>
+                        <td>Venkatesh</td>
+                        <td>28</td>
+                        <td>Male</td>
+                        <td>9442486144</td>
+                    </tr>
+                    <tr>
+                        <td>Sabari</td>
+                        <td>28</td>
+                        <td>Male</td>
+                        <td>1234567890</td>
+                    </tr>
+                    <tr>
+                        <td>Ananth</td>
+                        <td>27</td>
+                        <td>Male</td>
+                        <td>1098765432</td>
+                    </tr>
+
+    </table>
+    </div>
+    <div class="column">
+        <table>
+            <caption><b>Personal Info</b></caption>
+            <tr>
+                <th style="width: 60%;">Name</th> <!--colspan merge no.of coloumns, where as rowspan merge number of rows-->
+                <th>Age</th>
+                <th>Sex</th>
+                <th style="width: 10%;">contact No</th>
+            </tr>
+            
+            <tr style="height: 100px;">
+                <td>Prabhu</td>
+                <td>28</td>
+                <td>Male</td>
+                <td>9566422688</td>
+            </tr>
+            <tr>
+                <td>Venkatesh</td>
+                <td>28</td>
+                <td>Male</td>
+                <td>9442486144</td>
+            </tr>
+            <tr>
+                <td>Sabari</td>
+                <td>28</td>
+                <td>Male</td>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>Ananth</td>
+                <td>27</td>
+                <td>Male</td>
+                <td>1098765432</td>
+            </tr>
+        </table>
+        </div>
+    
+   
+ </body>
+ </html>

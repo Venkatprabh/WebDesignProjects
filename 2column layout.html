@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Column Layout</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+/*1*/.column{               /* In the following three methods use any one method*/
+        float: left;
+        height: 200px;
+    }
+    .left{
+        width: 25%;
+        
+    }
+    .right{
+        width: 75%;
+        
+    }
+    
+/*2.row{
+        display:flex;
+    }
+    .column{
+        flex: 50%;
+        height: 250px;
+        padding-left: 30px;
+    } */
+/*3/*.column{
+        float: left;
+        height: 350px;
+        width: 50%;
+        padding: 25px;
+        
+    }
+    .row::after{
+        content: "";
+        display: table;
+        clear: both;
+    } */
+</style>
+</head>
+<body>
+    <h2 style="text-align: center;">2 COLUMN PAGELAYOUT</h2>
+    <div class="row">
+        <div class="column left" style="background-color: brown;">
+            <h3 style="text-align:center">Column1</h3>
+            <p> Hai, I am column1's text</p>
+         </div>
+         <div class="column right" style="background-color: blue;">
+            <h3 style="text-align:center">Column2</h3>
+            <p> Hai, I am column2's text</p>
+         </div>
+         
+    </div>
+</body>
+</html>

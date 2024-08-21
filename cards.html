@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile and Product card</title>
+    <style>
+        .card{
+            box-sizing: border-box;
+            margin: 20px;
+            width: 25%;
+            background-color:rgba(33, 199, 33, 0.7) ;
+            border: 3px solid black;
+            box-shadow: 2px 2px 0 2px;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            font-size: 35px;
+            color: blanchedalmond;
+        }
+        .cardbutton{
+            width: 50%;
+            padding-bottom: 15px;
+            background-color: black;
+            color: white;
+            float: left;
+        }
+        .card:hover{
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;" style="font-size: 40px;">Profile Card</h2>
+    <div class="card">
+        <img src="image/pvp.jpg" alt="Venkatesh Prabhu Pic">
+        <p>P.Venkatesh Prabhu</p>
+        <p style="font-size: 25px;">Founder & CEO of PVP Corp</p>
+        <div style="display: flex;" style="height: 50px;">
+        <button style="width: 50%;" style="height: 50px;">Contact</button>
+        <button style="width: 50%;" style="height: 50px;">info</button>
+        </div>
+    </div>
+</body>
+</html>

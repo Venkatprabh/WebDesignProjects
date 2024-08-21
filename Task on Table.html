@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-table</title>
+    <style>
+        table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        /* border-style: ridge; */
+            }
+        
+    table.center {
+        margin-left: auto; 
+        margin-right: auto;
+            }
+</style>
+</head>
+<body>
+
+    <table class="center" style="width: 50%;">
+        <caption><b>TABLE WITH SCHEDULE</b></caption>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+           
+            <th colspan="2">Schedule</th>
+            <th rowspan="2"> Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td style="text-align: 20pt;" rowspan="2">Monday</td>
+            <td style="text-align: center;background-color:#ffff66"rowspan=2">8:00am</td>
+            <td style="text-align: center;background-color:#b380ff"rowspan=2">5:00pm</td>
+            <td style="text-align: center;">Introduction to xml</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">Validity:DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3 ">Tuesday</td>
+            <td style="text-align: center;background-color:#ffff66">8:00am</td>
+            <td style="text-align: center;background-color:#ffff66">11:00am</td>
+            <td height="50px" style="text-align: center">XPath</td>
+        
+        </tr>
+        <tr>
+            <td style="text-align: center;background-color:#ffff66">11:00am</td>
+            <td style="text-align: center;background-color:#99e699">02:00pm</td>
+            <td rowspan="2" style="text-align: center;">XSL Transfomations</td>
+            
+        </tr>
+        <tr>
+            <td style="text-align: center;background-color:#99e699">02:00pm</td>
+            <td style="text-align: center;background-color:#b380ff">05:00pm</td>
+            
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td style="text-align: center;background-color:#ffff66">08:00am</td>
+            <td style="text-align: center;background-color:#99e699">12:00pm</td>
+            <td style="text-align: center;">XLS Formatting Objects</td>
+
+        </tr>
+    </table>
+    
+</body>
+</html>

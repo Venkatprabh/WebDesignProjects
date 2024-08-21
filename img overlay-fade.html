@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay</title>
+    <style>
+    .container{
+        width:25%;
+        position: relative;
+        
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+        
+    }
+    .overlay{
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+    .container:hover .overlay{
+        opacity: 0.5;
+    }
+    .text{
+        font-size: 20px;
+        position: absolute;
+        color: white;
+        top : 50%;
+        left: 50%;
+        -webkit-transform:translate (-50%,-50%);
+        transform:translate(-50%,-50%);
+    }
+    .p{
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .overlay1{
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right:0;
+        background-color: blue;
+        opacity: 0;
+        transition: 0.2s ease;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .container:hover .overlay1{
+        opacity: 1;     
+    }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Image Overlay-Fade</h2>
+    <div class="p"><b>The entire image will be slightly transperant behind the fade.</b></div>
+    <div class="container">
+        <img src="\image\man-silhouette-profile-picture.jpg" alt="man profile picture" >
+        <div class="overlay">
+            <div class="text">Venkatesh Prabhu.P</div>
+        </div>
+    </div>
+
+    <h2 style="text-align: center;">Image Overlay-Fade</h2>
+    <div class="p"><b>The entire image will be hide behind the fade.</b></div>
+    <div class="container">
+        <img src="\image\man-silhouette-profile-picture.jpg" alt="man profil picture" >
+        <div class="overlay1">
+            <div class="text">Venkatesh Prabhu.P</div>
+        </div>
+    </div>
+</body>
+</html>

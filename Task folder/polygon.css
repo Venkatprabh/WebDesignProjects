@@ -1,0 +1,18 @@
+.rectangle {
+    /* margin: 20px; */
+    width: 90%; /* Width of the rectangle */
+    height: 150px; /* Height of the rectangle */
+    background-color: #4CAF50; /* Background color of the rectangle */
+    border: 2px solid #000; /* Optional: Border around the rectangle */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.pentagon{
+    text-align:center;
+    border: 2px solid #000;
+    border-radius:10px;
+    width: 90%;
+    height: 300px;
+    background-color: rgb(212, 61, 61);
+    clip-path: polygon(0% 0%,100% 0%,100% 30%,50% 50%,0% 30%);
+                    }

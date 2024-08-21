@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+        <style>
+            body{
+                font-size: larger;
+                padding: 20px;
+            }
+            div h2{
+                color: red;
+                background-color: yellowgreen;
+            }
+            div > h3{
+                color: black;
+                background-color: rebeccapurple;
+            }
+            div + h4{
+                color: blue;
+                background-color: goldenrod;
+            }
+            div ~ h5{
+                color: whitesmoke;
+                background-color: black;
+            }
+        </style>
+</head>
+<body>
+    <h1 style="text-align: center;" style="padding: 15px;">Lets see about Combinators!!!!!!</h1>
+    
+    <p>Combinators are used to explain the relationship between selectors.</p>
+    <hr>
+    <div>
+        <h2>This is a descendant selector!!!!!!</h2>
+        <h2>The descendant combi. works on the entire div elements.</h2>
+    </div>
+    <h2>This element is outside the div</h2>
+    <hr>
+    <div>
+        <h3>This is a Child selector!!!!!!</h3>
+        <h3>The child combi. works on the entire div elements.</h3>
+        <p>If any other than elements (h3) the style of the child Combinators will not apply.</p>
+    </div>
+    <h3>This element is outside the div</h3>
+    <hr>
+    <div>
+        <h4>This is a adjacent sibling selector!!!!!!</h4>
+        <h4>The adjacent combi. works on outside the first element of the div</h4>
+    </div>
+    <h4>This element is outside the div1</h4>
+    <h4>This element is outside the div2</h4>
+    <h4>This element is outside the div3</h4>
+    <hr>
+    <div>
+        <h5>This is a general sibling selector!!!!!!</h5>
+        <h5>The adjacent combi. works on outside of the all element of the div</h5>
+    </div>
+    <h5>This element is outside the div1</h5>
+    <h5>This element is outside the div2</h5>
+    <h5>This element is outside the div3</h5>
+    <hr>
+</body>
+</html>

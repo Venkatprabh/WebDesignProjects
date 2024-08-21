@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body{
+        margin:0;
+    }
+    .icon-bar{
+        background-color: black;
+        width: 100%;
+        overflow: auto;
+        
+    }
+    .icon-bar a{
+        width:20%;
+        transition: all 0.7sec ease;
+        font-size: 36px;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .icon-bar a:hover{
+        background-color:white;
+    }
+    .active{
+        background-color:greenyellow;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="icon-bar" width="20px">
+        <a  class="active" href="#"><i class="fa fa-home"></i></a>
+        <a  href="#"><i class="fa fa-search"></i></a>
+        <a  href="#"><i class="fa fa-envelope"></i></a>
+        <a  href="#"><i class="fa fa-globe"></i></a>
+        <a  href="#"><i class="fa fa-trash"></i></a>    
+</body>
+</html>

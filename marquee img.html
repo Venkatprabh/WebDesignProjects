@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee images</title>
+    <style>
+        body{
+            background-color: rgb(216, 230, 225);
+            padding: 20px;
+        }
+        .box{
+            border:border-box;
+            width:100%;
+            border: 10px solid black;
+            box-shadow: 4px 4px rgb(0, 0, 0);
+             
+        }
+        marquee img{
+            width: 50%;
+            height: fit-content;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <marquee width="100%" behaviour="scroll" direction="left" scroll-count="7">
+            <img src="image/ls1.jpg" alt="landscape1">
+            <img src="image/ls2.jpg" alt="landscape2">     
+            <img src="image/ls3.jpg" alt="landscape3">
+        </marquee>
+    </div>
+
+</body>
+</html>

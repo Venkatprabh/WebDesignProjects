@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <style>
+        .row1{
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            background-color: rgb(73, 136, 173);
+            display: flex;
+            background-image: linear-gradient(to right,rgb(140, 140, 216), rgb(197, 77, 77));
+            
+        }
+        a{
+            position: relative;
+            font-family: cursive;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 25px;
+            top: 10px;
+            left: 280px;
+        }
+        .button1{
+            position: absolute;
+            top: 40px;
+            right: 20px;
+            background-image: linear-gradient(to right, blue, red);
+            color: white;
+            font-size: 22px;
+            border: none;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        .button2{
+            position: absolute;
+            top: 300px;
+            left: 50px;
+            background-image: linear-gradient(to right, blue, red);
+            color: white;
+            font-size: 22px;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .box1{
+            
+            float: left;
+            position: absolute;
+            background-color: white;
+            border-radius: 30px;
+            text-align: center;
+            padding: 50px;
+            width: 55%;
+            height: 260px;
+            top: 100px;
+            left: 50px;
+            opacity: 0.6;
+        }
+        .box2{
+            float: right;
+            position: absolute;
+            padding: 30px;
+            height: 200px;
+            top: 100px;
+            right: 10px;
+            border-radius: 30px;
+            width: 50%;
+        }
+        .row2{
+            width: 100%;
+            height: 500px;
+            text-align: center;
+        }
+        .box3{
+            background-color: white;
+            opacity: 0.6;
+            color: black;
+            box-sizing: border-box;
+            border-radius: 30px;
+            width: 90%;
+            position: relative;
+            top: 3px;
+            left: 70px;
+            height: 350px;
+            padding-left: 100px;
+        }
+        .col-33{
+            width: 30%;
+            height: 100px;
+            float: left;
+            display: flex;
+            padding: 20px;
+            text-align: left;
+        }
+        .col-33 h1{
+            position: relative;
+            left: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="row1">
+        <h2 style="text-align: left; padding: 15px;">GlassM4</h2>
+        
+        <a href="#home">Home</a>
+        <a href="#about us">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contacts">Contacts</a>
+
+        <div class="button1">Send Message</div>
+            <div class="box2">
+                <img src="image/photographer.jpg" alt="a photographer" style="background-size: cover; width: 100%;height: 300px;" >
+                </div>
+        
+        <div class="box1">
+            <h1 style="font-size: 40px; color: black; text-align: left;"><strong>Photographer</strong></h1>
+            <p style="font-size: 22px; text-align: justify; color: solid black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                 eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                 sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="button2">Read More</div>
+        </div>
+    </div>
+
+    <div class="row2" style="background-image: url(/image/multi\ color.jpg);">
+        <h1 style="font-size: 40px; text-align: center; padding: 15px;">Our Services</h1>
+
+        <div class="box3">
+            <div class="col-33">
+                <img src="image/bulb.jpeg" alt="interior photo" width="250px" height="120px">
+            </div>
+        
+            <div class="col-33">
+                <img src="image/user.jpg" alt="user" height="120px" width="200px" height="120px">
+                <!-- <h1>Portrait Photo</h1> -->
+            </div>
+            <div class="col-33">
+                <img src="image/art paint board.jpg" alt="color board" width="200px" height="120px">
+                <!-- <h1>Art Photo</h1> -->
+            </div>       
+        
+            <div class="col-33">
+            <h1 style="text-align: left;">Interior Photograph</h1><br>
+            <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Center</title>
+    <style>
+        .container{
+            background-image: linear-gradient(to top,rgb(199, 73, 94),rgb(233, 231, 231));
+            width: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .container a{
+            float: right;
+            color: brown;
+            text-decoration: none;
+            padding: 15px;
+            padding-top: 20px;
+            font-size: 25px;
+        }
+        .active{
+            background-color: black;
+            border-radius: 40px;
+        }
+        .box{
+            width: 80%;
+            background-color: rgb(148, 172, 148);
+            box-sizing:border-box;
+        }
+        .box75{
+            float: left;
+            display: block;
+            position: absolute;
+            top:125px;
+            left:15px;
+            width: 50%;
+            border: 1px solid black;
+        }
+        .box25{
+            position: absolute;
+            top: 125px;
+            right: 20px;
+            width: 20%;
+            float: right;
+        }
+        .row:after{
+            clear: both;
+            display: table;
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2 style="float: left; padding: 15px; color: brown;">Invest Center</h2>
+     
+    <a href="#getstarted" class="active">Get Started</a>
+    <a href="#contact">Contact</a>
+    <a href="#feature">Feature</a>
+    <a href="#about">About</a>
+    <a href="#home">Home</a>
+    
+    <div class="box">
+        <div class="box75">
+            <h1 style="font-size: 30px; color: red;">Investment Tools For You</h1>
+            <p>Sed commodo consectetur eros vel aliquet. Nulla ac neque semper, imperdiet 
+                metus ut, dapibus tortor. Mauris scelerisque, orci sed molestie condimentum, 
+                neque dui dapibus nulla, id blandit justo nisi eget nunc. Duis eget lectus 
+                venenatis, placerat turpis quis, aliquam augue. Ut egestas sapien sed porttitor
+                 cursus. Morbi gravida gravida elit. Duis fringilla blandit purus, et laoreet 
+                 turpis porta nec.</p>
+        </div>
+        <div class="box25">
+            <img src="image/cryto screen.avif" alt="crypto currency" style="background-size: cover;">
+        </div>
+    </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM:post</title>
+</head>
+<body>
+
+<!-- stacked form -->
+    
+    <p><b>while creating a form, for security purpose you should use only "form post" not "form get".</b></p>
+    <div class="container" style="margin-left: 20px;">
+        <h2>Stacked Form(Default)</h2>
+        <form action="List.html">
+            <div class="form-group">
+                <label for="email">Enter your E-mail ID:</label><br>
+                <input type="email" class="form-control" id="email" placeholder="Mail ID">
+            </div>
+            <div class="form-group">
+                <label for="email">Enter your Password:</label><br>
+                <input type="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="remember">Remember me</label>
+            </div>
+            <button style="background-color: cornflowerblue;" type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+
+<!-- Inline Form -->
+
+    <div class="container" style="margin-left: 20px;">
+        <h2>Inline Form</h2>
+        <form class="form-inline" action="List.html">
+                <label for="email">Enter your E-mail ID:</label>
+                <input type="email" class="form-control" id="email" placeholder="Mail ID">
+            
+                <label for="email">Enter your Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Password">
+            
+                <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="remember">Remember me</label>
+            
+            <button style="background-color: cornflowerblue;" type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

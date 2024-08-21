@@ -1,0 +1,84 @@
+<!-- Table used to group a set of data in rows and columns.
+ tables are created by providing heading and data 
+ <table></table>tags are used to create a table
+ while creating a table there is no borders -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+<style>
+    table,th,td{
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+        border-radius: 15px;
+        border-color: blue;
+
+    }
+    th,td{
+        border-style: dotted;
+        border-spacing: 20px;
+    }
+    table {
+        background-color: aqua;
+    }
+    th{
+        text-align: left;
+    }
+    th,td{
+        padding-bottom: 50px;
+    
+    }
+
+</style>
+ </head>
+ <body>
+    <table style="width: 100%;height: 200px;">
+        <caption><b>Personal Info</b></caption>
+        <tr>
+            <th colspan="2"; style="width: 60%;">Name</th> <!--colspan merge no.of coloumns, where as rowspan merge number of rows-->
+            <th style="width: 10%;"></th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th style="width: 10%;">contact No</th>
+        </tr>
+        
+        <tr style="height: 100px;">
+            <td>Prabhu</td>
+            <td></td>
+            <td></td>
+            <td>28</td>
+            <td>Male</td>
+            <td>9566422688</td>
+        </tr>
+        <tr>
+            <td>Venkatesh</td>
+            <td></td>
+            <td></td>
+            <td>28</td>
+            <td>Male</td>
+            <td>9442486144</td>
+        </tr>
+        <tr>
+            <td>Sabari</td>
+            <td></td>
+            <td></td>
+            <td>28</td>
+            <td>Male</td>
+            <td>1234567890</td>
+        </tr>
+        <tr>
+            <td>Ananth</td>
+            <td></td>
+            <td></td>
+            <td>27</td>
+            <td>Male</td>
+            <td>1098765432</td>
+        </tr>
+
+    </table>
+    
+ </body>
+ </html>

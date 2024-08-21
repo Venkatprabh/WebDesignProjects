@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        div{
+            font-size: 30px;
+        }
+        .box{
+            width: 300px;
+            height: 150px;
+            padding: 15px;
+            background-color: coral;
+            box-shadow: 10px 15px;
+            border: 2px black;
+            margin: auto;
+        }
+
+        .box1{
+            width: 300px;
+            height: 150px;
+            padding: 15px;
+            background-color: coral;
+            box-shadow: 10px 15px olivedrab;
+            border: 2px black;
+            margin: auto;
+        }
+
+        .box2{
+            width: 300px;
+            height: 150px;
+            padding: 15px;
+            background-color: coral;
+            box-shadow: 10px 15px olivedrab inset;
+            border: 2px black;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">default</h2>
+    <div class="box">A Box with Shadow!!!!!!</div>
+
+    <h2 style="text-align: center;">Colored Shadow</h2>
+    <div class="box1">A Box with colored Shadow!!!!!!</div>
+
+    <h2 style="text-align: center;">Insert Shadow</h2>
+    <div class="box2">A Box with inserted Shadow!!!!!!</div>
+</body>
+</html>

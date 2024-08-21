@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        a:visited{
+            color: blue;
+        }
+        a:link{
+            color: red;
+
+        }
+        a.highlight:hover{
+            color: rgba(255, 0, 255, 0.4);
+            font-size: 50px;
+        }
+        a:active{
+            color: green;
+        }
+        p:i first-child{
+            font-family: 'Lucida Sans';
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Some Pseudo classes are.....</h2>
+    <p><i><a class="highlight" href="#">Its a link.If you press here nothing happen!!!</a></i></p>
+    <p>An Unvisited link is in red color.</p>
+    <p>While hovering the link changes into mild red color.</p>
+    <p>An activated link is in green color.</p>
+    <p>A visited link is in blue color.</p>
+
+
+</body>
+</html>

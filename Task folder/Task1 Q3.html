@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio</title>
+    <script src="https://kit.fontawesome.com/18c7bd8aa5.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            width: 100%;
+            position: static;
+            height: 700px;     
+        }
+        .navBar a{
+            float: right;
+            display: flex;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 15px;
+            color: rgb(209, 146, 51) ;;
+        }
+        .container h2{
+            float: left;
+            padding-left: 15px;
+            color: black;
+            font-size: 40px;
+        }
+        .box1{
+            position: absolute;
+            top: 200px;
+            left: 15px;
+            width: 45%;
+            height: 400px;
+            box-sizing: border-box;
+             
+        }
+        .box1 p{
+            float: left;
+            display: inline;
+            font-size: 20px;
+            padding-left: 15px;
+        }
+
+        .box2{
+            position: absolute;
+            top: 200px;
+            right: 45px;
+            width: 30%;
+            height: 400px;
+            box-sizing: border-box;
+            float: left;
+            display: inline;
+            background-color: white;
+            border-radius: 10px;
+            
+        }
+
+        form input{
+            width: 300px;
+            border-radius: 5px;
+            height: 20px;
+       } 
+
+       .container1{
+            display:flex;
+            position: static;
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid black;
+            float: left;            
+            
+       }
+       .row i{
+            border: 2px solid black;
+            font-size: 150px;
+            text-align: center;
+            width: 30%;
+            display:inline-table;
+            padding-top: 25px;
+       }
+       .row h1{
+            
+            font-size: 50px;
+            text-align: center;
+       }
+       .row h2{
+            border: 2px solid black;
+            width: 30%;
+            font-size: 30px;
+            text-align: center;
+       }
+       /* .container1 p{
+            float: left;
+            width: 33%;
+            font-size: 20px;
+            text-align: justify;
+       } */
+    </style>
+</head>
+<body>
+    <div class="container"  style="background-image: url(image/creative\ pics.jpeg); width: 100%; 
+                height: 700px; background-size: cover; ">
+        
+        <h1 style="float: left;color:rgb(159, 214, 8); padding-left: 15px;">Studio M4</h1>
+        <div class="navBar">
+            <a href="#buynow">Buy Now</a>  
+            <a href="#livedemoblocks">Live Demo Blocks</a>
+            <a href="#livedemo">Live Demo</a>        
+            <a href="#home">Home</a>
+        </div>
+        
+        <div class="box1">
+            <h2>Creative Studio</h2><br>
+            <p style="color: yellow; ">Etiam dapibus porttitor odio sit amet fermentum. Mauris a turpis eget magna 
+                cursus tempus ac eget dui. Vivamus gravida tempus auctor. Pellentesque lectus 
+                ligula, vestibulum sed neque a, hendrerit faucibus mauris. Donec feugiat nec 
+                nibh quis maximus.</p>
+        </div>
+
+        <div class="box2">
+            <center>
+                <p style="font-size: 40px; color: red; ">Lets Talk</p>
+                <p style="font-size: 20px;">Etiam dapibus porttitor odio sit amet fermentum. 
+                    Mauris a turpis eget magna.</p>
+                <form action="#">
+                    <input type="text" placeholder="Name"><br><br>
+                    <input type="text" placeholder="Email"><br><br>
+                    <input type="text" placeholder="Password"><br><br>
+                    <button type="submit" style="background-color: blueviolet; width: 200px;
+                    height:40px; font-size: 20px;">Send</button>
+                    
+                </form>
+            </center>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="row"><h1>Services</h1></div>
+        <div class="row"><i class="fa-solid fa-clipboard-list"></i></div>
+        <h2>Bright Project</h2>
+        <i class="fa-solid fa-rocket"></i>
+        <!-- <h2>Project Discussion</h2> -->
+        <i class="fa-solid fa-file-contract"></i>
+        <!-- <h2>Signing a Contract</h2> -->
+        <i class="fa-solid fa-desktop"></i>
+        <!-- <h2>Media Planning</h2> -->
+        <i class="fa-solid fa-book"></i>
+        <!-- <h2>Content Strategy</h2> -->
+        <i class="fa-regular fa-message"></i>
+        <!-- <h2>Social Media</h2> -->
+        
+    </div>
+</body>
+</html>

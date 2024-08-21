@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Masking</title>
+    <style>
+        .mask{
+            -webkit-mask-image: url(image/w3logo.png);
+            mask-image: url(image/w3logo.png);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h2>lets see how image masking works</h2>
+    <div class="mask">
+        <img src="image/ls1.jpg" src="Landscape_1" width="400px" height="400px">
+    </div>
+
+    <h2>Original Image</h2>
+    <img src="image/ls1.jpg" alt="landscape" height="400px">
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- position: STATIC -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        div, p{
+            font-size: 25px;
+        }
+        .static{
+            position: static;
+            border:3px solid #888 ;
+        }
+        .relative{
+            position: relative;
+            border:3px solid #888 ;
+            right: 20px; /* Occupies the entire line while giving right 20px move away from right
+                                and hides earlier content's letter*/
+            width: 400px;
+            height: 300px;
+        
+        
+                            }
+        .absolute{
+            position:absolute ;
+            border:3px solid #888 ;
+            right: 20px;
+            bottom:0;
+            
+        }
+        .fixed{
+            position: fixed;
+            border:3px solid #888 ;
+            right: 50px;
+            bottom:50px;
+        }
+        .sticky{
+            position: -webkit-sticky;
+            position: sticky;
+            top:0px;
+            padding: 5px;
+            border: 2px solid #333;
+        }
+        
+</style>
+    
+</head>
+<body>
+    <h2 style="text-align: center;">Position:Static</h2>
+    <div class="static">static positioning does not change with top,bottom,left or right properties,
+        it postioned in the normal flow of the page.</div> 
+        <p >In static positioning the gap between header and content is default </p>
+ 
+    <h2 style="text-align: center;">Position:Relative</h2>
+    <div class="relative">relative positioning means affected by top,bottom,right or left position properties.</div> 
+
+    <h2 style="text-align: center;">Position:Absolute</h2>
+    <div class="absolute">.</div> 
+
+    <h2 style="text-align: center;">Position:Fixed</h2>
+    <div class="fixed">fixed positioning is can be fixed in a required place, but once it placed
+        it cannot be moved while scrolling</div>
+
+    <h2 style="text-align: center;">Absolute Positioning</h2>
+    <div class="relative">
+    <div class="absolute">before creating abs.pos we need to create a relative pos.this abs.pos 
+                                is used inside the relative position.</div>
+    </div>
+
+    <h2 style="text-align: center;">Sticky positioning</h2>
+    <div class="sticky" b>I am Sticky</b></div>
+    <p> </p>
+    <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    
+
+</body>
+</html>

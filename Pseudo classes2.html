@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <title>Pseudo classes2</title>
+    <style>
+        div :first-child{
+            color: red;
+            font-size: 40px;
+        }
+        p b:first-child{  /*used to highlight the first specified word is in the text*/
+            color: red;
+            font-size: 40px;
+        }
+        body{
+            font-size: larger;
+        }
+        h3:first-child b{  /*used to highlight the every specified word is available in the text*/
+            color: pink;
+        }
+        q:lang(quot){   /*Dont give space between "q" and colon(:), or it will show only double qoutes(" ") */
+            quotes: "&&" "&&";
+
+        }
+    </style>
+</head>
+<body>
+    <h3>First <b>child</b> class works only on the first <b>child</b> tag and first <b>child</b> tag in each div element.</h3>
+    
+    <p>I am the First Born</p>
+    <p>I am the First Born</p>
+    
+    <p>I <b>am</b> the <b>First</b> Born</p>
+    <p>I <b>am</b> the <b>First</b> Born</p>
+    <p>I <b>am</b> the <b>First</b> Born</p>
+    <div>
+        <p>I am the First Born</p>
+        <p>I am the First Born</p>
+    </div>
+    <p>I am the <q lang="quot"> First</q> Born</p>
+    <p>I am the <q lang="quot"> First</q> Born</p>
+    <p>I am the First Born</p>
+    <p>I am the First Born</p>
+    
+</body>
+</html>

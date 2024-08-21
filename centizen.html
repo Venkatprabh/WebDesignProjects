@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centizen webpage</title>
+        <style>
+            .row1{
+                width: 100%;
+                position: relative;
+                /* padding: 15px; */
+            }
+            .row1 img{
+                width: 100%;
+                /* height: 700px; */
+            }
+            .col20{
+                padding: 20px;
+                position: fixed;
+                top: 0;
+                width: 20%;
+                /* border: 2px solid black; */
+                float: left;
+                display: flex;
+                z-index: 2;
+            }
+            .col80{
+                display: flex;
+                position:fixed;
+                top: 0;
+                right:0;
+                width: 75%;
+                /* border: 2px solid black; */
+                float: right;
+                font-size: 25px;
+                padding-top: 15px;
+                
+            }
+            .col80 a{
+                text-shadow: 2px 2px 5px black ;
+                text-decoration: none;
+                /* color:white; */
+                color: rgb(96, 142, 211)42, 42, 122;
+                padding-left: 25px;
+                padding-top: 35px;
+                z-index: 3;
+                /* color: white; */
+            }
+            .row1::after{
+                background-color: white;
+                color: black;
+            }
+            row2{
+                width: 50%;
+                float: left;
+                display: flex;
+            }
+        </style>
+</head>
+<body>
+    <div class="row1">
+        <img src="image/business meeting.gif" alt="meeting">
+        <div class="col20">
+            <img src="image/centizen-removebg-preview.png" alt="centizen" width="170px">
+        </div>
+        <div class="col80">
+            <a href="#talent solution">Talent Solution</a>
+            <a href="#software engineering">Software Engineering</a>
+            <a href="#remote hiring">Remote Hiring</a>
+            <a href="#products">Products</a>
+            <a href="#company">Company</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact us">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="row2">
+        <p>Talent Solution</p></div>
+        <div class="row2">
+        <p>Software Engineering</p>
+    </div>
+</body>
+</html>

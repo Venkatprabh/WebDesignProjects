@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow</title>
+    <style>
+        h1{
+            text-shadow: 1px 2px; /*here 1px is text size, 2px is shadow size*/
+        }
+        h2{
+            text-shadow: 1px 2px red; /*here 1px is text size, 2px is shadow size*, red is 
+                                                                    color of shadow.*/
+            font-size: xx-large;
+        }
+        h3{
+            text-shadow: 2px 3px 5px red; /* here 5px is blur*/
+            font-size: xx-large;
+        }
+
+        h4{
+            color: blue; /*here blue is text color*/
+            text-shadow: 2px 3px 5px red; /* here 5px is blur. red is color of blur.*/
+            font-size: xx-large;
+        }
+
+        h5{
+            text-shadow: 0 0 3px red, 0 0 5px green; /*multiple text shadow. the color of 
+                                                            blur will be combi. of green and red.*/
+            font-size: xx-large;
+        }
+
+        h6{
+            font-size: xx-large;
+            color: coral;
+            text-shadow: -1px 2px black, 0 1px black, 1px 0 black, 0 -1px black;
+            /* This text shadow is used to give borders to the text */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lets see the Text shadow effect!!!!!!</h1>
+    <h2>Lets see the Text shadow with shadow color!!!!!!</h2>
+    <h3>Lets see the Text shadow with blur!!!!!!</h3>
+    <h4>Lets see the blue Text & red shadow!!!!!!</h4>
+    <h5>Lets see the Text with combi. of red and green shadow!!!!!!</h5>
+    <h6>Lets see texts with borders!!!!!!!</h6>
+</body>
+</html>
