@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .passanger-list {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ticket Booking System</h1>
+
+        <!-- Form to get Passengers Info -->
+        <div>
+            <h3>Train Ticket Booking</h3>
+            <form id="ticketForm">
+                <input type="text" id="name" placeholder="Passanger Name" required><br>
+                <input type="number" id="age" placeholder="Age" required><br>
+                <input type="number" id="qty" placeholder="No.of Passanger" required><br>
+                <label>
+                    <input type="radio" name="gender" value="Male" required>Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Female" required>Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Other" required>Other
+                </label>
+                <button type="submit">Buy Tickets</button>
+            </form>
+        </div>
+
+        <!-- Section to Display the Passanger Detail -->
+        <div class="passanger-list">
+            <h3>Passengers Details</h3>
+            <div id="passangerList"></div>
+        </div>
+    </div>
+
+    <script>
+
+// Class representing a Passanger
+class Passanger {
+    constructor(name, age, sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
+    // Method to get the Passanger details
+    getDetails() {
+        return `${this.name} is ${this.age} years old ${this.sex}`;
+    }
+}
+
+// Class representing a number of passanger
+class Group {
+    constructor() {
+        this.groups = []; // Initialize an empty array to passanger info
+    }
+
+    // Method to add a passanger info to the Group
+    addBook(passanger) {
+        this.groups.push(passanger);
+        this.displayPassangers(); // Display the updated list of passangers
+    }
+
+    // Method to display all passangers in the Group
+    displayPassangers() {
+        const passangerList = document.getElementById('PassangerList');
+        passangerList.innerHTML = ''; // Clear the previous list
+
+        this.passangers.forEach((passanger, index) => {
+            const passangerDiv = document.createElement('div');
+            passangerDiv.classList.add('passanger');
+            passangerDiv.innerHTML = `
+                <strong>${passanger.getDetails()}</strong>
+                <button onclick="removeBook(${index})">Remove</button>
+            `;
+            passangerList.appendChild(passangerDiv);
+        });
+    }
+
+    // Method to remove a book from the library
+    // removeBook(index) {
+    //     this.books.splice(index, 1);
+    //     this.displayBooks(); // Refresh the book list
+    // }
+}
+
+// Instantiate the Library
+const myGroup = new Group();
+
+// Function to handle form submission and add a new book
+document.getElementById('ticketForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Get form values
+    const name = document.getElementById('name').value;
+    const age = document.getElementById('age').value;
+    const sex = document.getElementById('sex').value;
+
+    // Create a new Passanger object
+    const newGroup = new Group(name,age,sex);
+
+    // Add the book to the library
+    myGroup.addpassanger(newGroup);
+
+    // Clear form input fields
+    document.getElementById('name').value = '';
+    document.getElementById('age').value = '';
+    document.getElementById('sex').value = '';
+});
+
+// Function to remove a book by index
+// function removeBook(index) {
+//     myLibrary.removeBook(index);
+// }
+</script>
+</body>
+</html>

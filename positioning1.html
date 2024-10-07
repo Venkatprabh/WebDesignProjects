@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Positioning Example</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .static {
+            position: static;
+            background-color: gray;
+        }
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: green;
+        }
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: blue;
+        }
+        .fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 150px;
+            background-color: red;
+        }
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: orange;
+        }
+        .spacer {
+            height: 2000px; /* Just to create scroll space for the sticky element */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box static">
+            Static Position<br>(Default)
+        </div>
+
+        <div class="box relative">
+            Relative Position<br>(top: 20px, left: 30px)
+        </div>
+
+        <div class="box absolute">
+            Absolute Position<br>(top: 50px, left: 50px)
+        </div>
+
+        <div class="box fixed">
+            Fixed Position<br>(top: 10px, right: 10px)
+        </div>
+
+        <div class="box sticky">
+            Sticky Position<br>(Sticks to the top)
+        </div>
+
+        <!-- Spacer to see sticky in action -->
+        <div class="spacer"></div>
+    </div>
+</body>
+</html>

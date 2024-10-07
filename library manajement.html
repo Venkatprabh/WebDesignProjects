@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .book-list {
+            margin-top: 20px;
+        }
+        .book {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Library Management System</h1>
+
+        <!-- Form to Add a New Book -->
+        <div>
+            <h3>Add a New Book</h3>
+            <form id="bookForm">
+                <input type="text" id="title" placeholder="Book Title" required><br>
+                <input type="text" id="author" placeholder="Author" required><br>
+                <input type="number" id="year" placeholder="Publication Year" required><br>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+
+        <!-- Section to Display the List of Books -->
+        <div class="book-list">
+            <h3>Books in Library</h3>
+            <div id="bookList"></div>
+        </div>
+    </div>
+
+    <script>
+
+// Class representing a Book
+class Book {
+    constructor(title, author, year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    }
+
+    // Method to get the book details
+    getDetails() {
+        return `${this.title} by ${this.author}, published in ${this.year}`;
+    }
+}
+
+// Class representing a Library
+class Library {
+    constructor() {
+        this.books = []; // Initialize an empty array to store books
+    }
+
+    // Method to add a book to the library
+    addBook(book) {
+        this.books.push(book);
+        this.displayBooks(); // Display the updated list of books
+    }
+
+    // Method to display all books in the library
+    displayBooks() {
+        const bookList = document.getElementById('bookList');
+        bookList.innerHTML = ''; // Clear the previous list
+
+        this.books.forEach((book, index) => {
+            const bookDiv = document.createElement('div');
+            bookDiv.classList.add('book');
+            bookDiv.innerHTML = `
+                <strong>${book.getDetails()}</strong>
+                <button onclick="removeBook(${index})">Remove</button>
+            `;
+            bookList.appendChild(bookDiv);
+        });
+    }
+
+    // Method to remove a book from the library
+    removeBook(index) {
+        this.books.splice(index, 1);
+        this.displayBooks(); // Refresh the book list
+    }
+}
+
+// Instantiate the Library
+const myLibrary = new Library();
+
+// Function to handle form submission and add a new book
+document.getElementById('bookForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Get form values
+    const title = document.getElementById('title').value;
+    const author = document.getElementById('author').value;
+    const year = document.getElementById('year').value;
+
+    // Create a new book object
+    const newBook = new Book(title, author, year);
+
+    // Add the book to the library
+    myLibrary.addBook(newBook);
+
+    // Clear form input fields
+    document.getElementById('title').value = '';
+    document.getElementById('author').value = '';
+    document.getElementById('year').value = '';
+});
+
+// Function to remove a book by index
+function removeBook(index) {
+    myLibrary.removeBook(index);
+}
+</script>
+</body>
+</html>
